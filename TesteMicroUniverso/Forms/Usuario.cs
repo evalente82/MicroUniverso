@@ -15,6 +15,17 @@ namespace TesteMicroUniverso.Forms
         public Usuario()
         {
             InitializeComponent();
+            
+        }
+
+        private void Usuario_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void BtnGravar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

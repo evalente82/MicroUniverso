@@ -18,5 +18,17 @@ namespace TesteMicroUniverso.Forms
             InitializeComponent();
             
         }
+
+        private void BtnCadastrar_Click(object sender, EventArgs e)
+        {
+            Usuario usuario = new Usuario();
+            //this.Visible=false;
+            usuario.Show();
+        }
+
+        private void BtnLogin_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
