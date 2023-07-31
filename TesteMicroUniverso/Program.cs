@@ -23,7 +23,7 @@ namespace TesteMicroUniverso
                 db.Database.CreateIfNotExists();
                 
             }
-            Application.Run(new Login());
+            Application.Run(new Principal());
         }
     }
 }
