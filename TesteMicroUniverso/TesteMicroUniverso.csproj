@@ -64,11 +64,35 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ConfigFaixaPreco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigFaixaPreco.Designer.cs">
+      <DependentUpon>ConfigFaixaPreco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HistAprovacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HistAprovacao.Designer.cs">
+      <DependentUpon>HistAprovacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Nota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Nota.Designer.cs">
+      <DependentUpon>Nota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202307310057172_Inicial.cs" />
     <Compile Include="Migrations\202307310057172_Inicial.designer.cs">
