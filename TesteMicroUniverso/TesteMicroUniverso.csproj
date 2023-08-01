@@ -102,6 +102,14 @@
     <Compile Include="Migrations\202307310119072_inclusao_tabelas.designer.cs">
       <DependentUpon>202307310119072_inclusao_tabelas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202308010325415_ajustesNoBd.cs" />
+    <Compile Include="Migrations\202308010325415_ajustesNoBd.designer.cs">
+      <DependentUpon>202308010325415_ajustesNoBd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308010419139_ajustesNoBd2.cs" />
+    <Compile Include="Migrations\202308010419139_ajustesNoBd2.designer.cs">
+      <DependentUpon>202308010419139_ajustesNoBd2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\ConfigFaixaPreco.cs" />
@@ -110,6 +118,9 @@
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ConfigFaixaPreco.resx">
+      <DependentUpon>ConfigFaixaPreco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +138,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202307310119072_inclusao_tabelas.resx">
       <DependentUpon>202307310119072_inclusao_tabelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308010325415_ajustesNoBd.resx">
+      <DependentUpon>202308010325415_ajustesNoBd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308010419139_ajustesNoBd2.resx">
+      <DependentUpon>202308010419139_ajustesNoBd2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

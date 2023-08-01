@@ -11,8 +11,8 @@ namespace TesteMicroUniverso.Models
     {
         [Key]
         public int IdFaixa{ get; set; }
-        public float FaixaMin { get; set; }
-        public float FaixaMax { get; set; }
+        public decimal FaixaMin { get; set; }
+        public decimal FaixaMax { get; set; }
         public int Visto { get; set; }
         public int Aprovacao { get; set; }
 

@@ -14,7 +14,7 @@ namespace TesteMicroUniverso.Models
         public string Login { get; set; }
         public string Senha { get; set; }
         public string Papel { get; set; }
-        public float ValorMinAprovacao { get; set; }
-        public float ValorMaxAprovacao { get; set; }
+        public decimal ValorMinAprovacao { get; set; }
+        public decimal ValorMaxAprovacao { get; set; }
     }
 }

@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dtConfigFaixa = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtConfigFaixa)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dtConfigFaixa
+            // 
+            this.dtConfigFaixa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtConfigFaixa.Location = new System.Drawing.Point(12, 107);
+            this.dtConfigFaixa.Name = "dtConfigFaixa";
+            this.dtConfigFaixa.Size = new System.Drawing.Size(776, 282);
+            this.dtConfigFaixa.TabIndex = 0;
+            // 
+            // ConfigFaixaPreco
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dtConfigFaixa);
+            this.Name = "ConfigFaixaPreco";
             this.Text = "ConfigFaixaPreco";
+            this.Load += new System.EventHandler(this.ConfigFaixaPreco_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtConfigFaixa)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dtConfigFaixa;
     }
 }
