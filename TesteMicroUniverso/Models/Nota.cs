@@ -12,12 +12,12 @@ namespace TesteMicroUniverso.Models
         [Key]
         public int IdNota { get; set; }
         public DateTime Emissao { get; set; }
-        public float VlMercadorias { get; set; }
-        public float Desconto { get; set; }
-        public float Frete{ get; set; }
-        public float Total { get; set; }
-        public bool Status { get; set; }
-        public int Visto { get; set; }
-        public int Aprovacao { get; set; }
+        public decimal? VlMercadorias { get; set; }
+        public decimal? Desconto { get; set; }
+        public decimal? Frete { get; set; }
+        public decimal? Total { get; set; }
+        public bool? Status { get; set; }
+        public int? Visto { get; set; }
+        public int? Aprovacao { get; set; }
     }
 }

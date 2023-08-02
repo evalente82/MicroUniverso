@@ -58,29 +58,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\ConfigFaixaPreco.cs">
+    <Compile Include="BLL\BLL_HistAprovacao.cs" />
+    <Compile Include="BLL\BLL_Nota.cs" />
+    <Compile Include="BLL\BLL_Usuario.cs" />
+    <Compile Include="DAL\DAL_HistAprovacao.cs" />
+    <Compile Include="DAL\DAL_Nota.cs" />
+    <Compile Include="DAL\DAL_Usuario.cs" />
+    <Compile Include="Forms\FrmConfigFaixaPreco.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ConfigFaixaPreco.Designer.cs">
-      <DependentUpon>ConfigFaixaPreco.cs</DependentUpon>
+    <Compile Include="Forms\FrmConfigFaixaPreco.Designer.cs">
+      <DependentUpon>FrmConfigFaixaPreco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\HistAprovacao.cs">
+    <Compile Include="Forms\FrmHistAprovacao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\HistAprovacao.Designer.cs">
-      <DependentUpon>HistAprovacao.cs</DependentUpon>
+    <Compile Include="Forms\FrmHistAprovacao.Designer.cs">
+      <DependentUpon>FrmHistAprovacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login.cs">
+    <Compile Include="Forms\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Forms\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Nota.cs">
+    <Compile Include="Forms\FrmNota.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Nota.Designer.cs">
-      <DependentUpon>Nota.cs</DependentUpon>
+    <Compile Include="Forms\FrmNota.Designer.cs">
+      <DependentUpon>FrmNota.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Principal.cs">
       <SubType>Form</SubType>
@@ -88,11 +94,11 @@
     <Compile Include="Forms\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Usuario.cs">
+    <Compile Include="Forms\FrmUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Usuario.Designer.cs">
-      <DependentUpon>Usuario.cs</DependentUpon>
+    <Compile Include="Forms\FrmUsuario.Designer.cs">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202307310057172_Inicial.cs" />
     <Compile Include="Migrations\202307310057172_Inicial.designer.cs">
@@ -102,6 +108,14 @@
     <Compile Include="Migrations\202307310119072_inclusao_tabelas.designer.cs">
       <DependentUpon>202307310119072_inclusao_tabelas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202308010325415_ajustesNoBd.cs" />
+    <Compile Include="Migrations\202308010325415_ajustesNoBd.designer.cs">
+      <DependentUpon>202308010325415_ajustesNoBd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308010419139_ajustesNoBd2.cs" />
+    <Compile Include="Migrations\202308010419139_ajustesNoBd2.designer.cs">
+      <DependentUpon>202308010419139_ajustesNoBd2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\ConfigFaixaPreco.cs" />
@@ -110,23 +124,32 @@
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmConfigFaixaPreco.resx">
+      <DependentUpon>FrmConfigFaixaPreco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Nota.resx">
-      <DependentUpon>Nota.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNota.resx">
+      <DependentUpon>FrmNota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Usuario.resx">
-      <DependentUpon>Usuario.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202307310057172_Inicial.resx">
       <DependentUpon>202307310057172_Inicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202307310119072_inclusao_tabelas.resx">
       <DependentUpon>202307310119072_inclusao_tabelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308010325415_ajustesNoBd.resx">
+      <DependentUpon>202308010325415_ajustesNoBd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308010419139_ajustesNoBd2.resx">
+      <DependentUpon>202308010419139_ajustesNoBd2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿namespace TesteMicroUniverso.Forms
 {
-    partial class HistAprovacao
+    partial class FrmHistAprovacao
     {
         /// <summary>
         /// Required designer variable.

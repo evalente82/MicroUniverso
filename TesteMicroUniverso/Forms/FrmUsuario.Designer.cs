@@ -1,6 +1,6 @@
 ﻿namespace TesteMicroUniverso.Forms
 {
-    partial class Usuario
+    partial class FrmUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DtUsuario = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.TxtLogin = new System.Windows.Forms.TextBox();
             this.TxtSenha = new System.Windows.Forms.TextBox();
@@ -42,7 +42,10 @@
             this.ComboPapel = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnGravar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.IdUsuario = new System.Windows.Forms.Label();
+            this.BtnEditar = new System.Windows.Forms.Button();
+            this.BtnExcluir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.DtUsuario)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,14 +58,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastrar Novo Usuário";
             // 
-            // dataGridView1
+            // DtUsuario
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 183);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(869, 276);
-            this.dataGridView1.TabIndex = 1;
+            this.DtUsuario.AllowUserToOrderColumns = true;
+            this.DtUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtUsuario.Location = new System.Drawing.Point(25, 183);
+            this.DtUsuario.Name = "DtUsuario";
+            this.DtUsuario.ReadOnly = true;
+            this.DtUsuario.Size = new System.Drawing.Size(869, 276);
+            this.DtUsuario.TabIndex = 1;
             // 
             // label2
             // 
@@ -112,6 +116,7 @@
             this.TxtValorMinAprov.Name = "TxtValorMinAprov";
             this.TxtValorMinAprov.Size = new System.Drawing.Size(153, 20);
             this.TxtValorMinAprov.TabIndex = 9;
+            this.TxtValorMinAprov.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtValorMinAprov_KeyPress);
             // 
             // label5
             // 
@@ -128,6 +133,7 @@
             this.TxtValorMaxAprov.Name = "TxtValorMaxAprov";
             this.TxtValorMaxAprov.Size = new System.Drawing.Size(153, 20);
             this.TxtValorMaxAprov.TabIndex = 11;
+            this.TxtValorMaxAprov.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtValorMaxAprov_KeyPress);
             // 
             // label6
             // 
@@ -141,6 +147,9 @@
             // ComboPapel
             // 
             this.ComboPapel.FormattingEnabled = true;
+            this.ComboPapel.Items.AddRange(new object[] {
+            "VISTO",
+            "APROVACAO"});
             this.ComboPapel.Location = new System.Drawing.Point(336, 24);
             this.ComboPapel.Name = "ComboPapel";
             this.ComboPapel.Size = new System.Drawing.Size(167, 21);
@@ -149,6 +158,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.BtnExcluir);
+            this.panel1.Controls.Add(this.BtnEditar);
             this.panel1.Controls.Add(this.BtnGravar);
             this.panel1.Controls.Add(this.TxtValorMinAprov);
             this.panel1.Controls.Add(this.ComboPapel);
@@ -175,20 +186,53 @@
             this.BtnGravar.UseVisualStyleBackColor = true;
             this.BtnGravar.Click += new System.EventHandler(this.BtnGravar_Click);
             // 
-            // Usuario
+            // IdUsuario
+            // 
+            this.IdUsuario.AutoSize = true;
+            this.IdUsuario.Location = new System.Drawing.Point(36, 12);
+            this.IdUsuario.Name = "IdUsuario";
+            this.IdUsuario.Size = new System.Drawing.Size(52, 13);
+            this.IdUsuario.TabIndex = 14;
+            this.IdUsuario.Text = "IdUsuario";
+            this.IdUsuario.Visible = false;
+            // 
+            // BtnEditar
+            // 
+            this.BtnEditar.Enabled = false;
+            this.BtnEditar.Location = new System.Drawing.Point(127, 65);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Size = new System.Drawing.Size(75, 23);
+            this.BtnEditar.TabIndex = 14;
+            this.BtnEditar.Text = "Editar";
+            this.BtnEditar.UseVisualStyleBackColor = true;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
+            // 
+            // BtnExcluir
+            // 
+            this.BtnExcluir.Enabled = false;
+            this.BtnExcluir.Location = new System.Drawing.Point(208, 65);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.BtnExcluir.TabIndex = 15;
+            this.BtnExcluir.Text = "Excluir";
+            this.BtnExcluir.UseVisualStyleBackColor = true;
+            this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
+            // 
+            // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(947, 512);
+            this.Controls.Add(this.IdUsuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DtUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Usuario";
+            this.Name = "FrmUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuario";
             this.Load += new System.EventHandler(this.Usuario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtUsuario)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -199,7 +243,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DtUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TxtLogin;
         private System.Windows.Forms.TextBox TxtSenha;
@@ -212,5 +256,8 @@
         private System.Windows.Forms.ComboBox ComboPapel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnGravar;
+        private System.Windows.Forms.Label IdUsuario;
+        private System.Windows.Forms.Button BtnExcluir;
+        private System.Windows.Forms.Button BtnEditar;
     }
 }

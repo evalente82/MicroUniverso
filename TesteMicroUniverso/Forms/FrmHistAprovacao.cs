@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace TesteMicroUniverso.Forms
 {
-    public partial class Usuario : Form
+    public partial class FrmHistAprovacao : Form
     {
-        public Usuario()
+        public FrmHistAprovacao()
         {
             InitializeComponent();
-            
-        }
-
-        private void Usuario_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void BtnGravar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
