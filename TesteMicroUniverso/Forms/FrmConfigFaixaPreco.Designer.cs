@@ -1,6 +1,6 @@
 ﻿namespace TesteMicroUniverso.Forms
 {
-    partial class ConfigFaixaPreco
+    partial class FrmConfigFaixaPreco
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace TesteMicroUniverso.Forms
 {
-    partial class Nota
+    partial class FrmNota
     {
         /// <summary>
         /// Required designer variable.

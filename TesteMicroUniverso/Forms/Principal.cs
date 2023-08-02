@@ -11,8 +11,10 @@ using TesteMicroUniverso.Models;
 
 namespace TesteMicroUniverso.Forms
 {
-    public partial class Principal : Form
+    public partial class Principal : Form        
     {
+        private FrmUsuario usuarioLogado;
+
         public Principal()
         {
             InitializeComponent();
@@ -20,32 +22,36 @@ namespace TesteMicroUniverso.Forms
 
         private void cadastrarUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Usuario usuario = new Usuario();
-            usuario.Show();
+            FrmUsuario frmUsuario = new FrmUsuario();
+            frmUsuario.Show();
         }
 
         private void notasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Nota nota = new Nota();
-            nota.Show();
+            FrmNota frmNota = new FrmNota();
+            frmNota.Show();
         }
 
         private void históricoAprovaçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HistAprovacao histAprovacao = new HistAprovacao();
-            histAprovacao.Show();
+            FrmHistAprovacao frmHistAprovacao = new FrmHistAprovacao();
+            frmHistAprovacao.Show();
         }
 
         private void canfiguraçãoFaixasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ConfigFaixaPreco faixaPreco = new ConfigFaixaPreco();
-            faixaPreco.Show();
+            FrmConfigFaixaPreco frmFaixaPreco = new FrmConfigFaixaPreco();
+            frmFaixaPreco.Show();
         }
 
         private void Principal_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+            
+        }
+
+        private void Principal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

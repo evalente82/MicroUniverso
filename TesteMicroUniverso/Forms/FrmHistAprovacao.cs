@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TesteMicroUniverso.Forms
 {
-    public partial class HistAprovacao : Form
+    public partial class FrmHistAprovacao : Form
     {
-        public HistAprovacao()
+        public FrmHistAprovacao()
         {
             InitializeComponent();
         }
