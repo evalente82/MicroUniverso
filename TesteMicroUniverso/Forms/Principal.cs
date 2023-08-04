@@ -13,8 +13,6 @@ namespace TesteMicroUniverso.Forms
 {
     public partial class Principal : Form        
     {
-        private FrmUsuario usuarioLogado;
-
         public Principal()
         {
             InitializeComponent();

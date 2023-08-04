@@ -47,6 +47,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -116,16 +118,28 @@
     <Compile Include="Migrations\202308010419139_ajustesNoBd2.designer.cs">
       <DependentUpon>202308010419139_ajustesNoBd2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202308031435173_ajustesNoBd1.cs" />
+    <Compile Include="Migrations\202308031435173_ajustesNoBd1.designer.cs">
+      <DependentUpon>202308031435173_ajustesNoBd1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308031728013_inclusao_data.cs" />
+    <Compile Include="Migrations\202308031728013_inclusao_data.designer.cs">
+      <DependentUpon>202308031728013_inclusao_data.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\ConfigFaixaPreco.cs" />
     <Compile Include="Models\HistAprovacao.cs" />
     <Compile Include="Models\Nota.cs" />
     <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\UsuarioLogado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FrmConfigFaixaPreco.resx">
       <DependentUpon>FrmConfigFaixaPreco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHistAprovacao.resx">
+      <DependentUpon>FrmHistAprovacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -150,6 +164,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202308010419139_ajustesNoBd2.resx">
       <DependentUpon>202308010419139_ajustesNoBd2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308031435173_ajustesNoBd1.resx">
+      <DependentUpon>202308031435173_ajustesNoBd1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308031728013_inclusao_data.resx">
+      <DependentUpon>202308031728013_inclusao_data.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

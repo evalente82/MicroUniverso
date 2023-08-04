@@ -123,7 +123,7 @@ namespace TesteMicroUniverso.Forms
             DtUsuario.CellClick += DataGridView_CellClick;
         }
 
-        private async void DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Verifique se o clique foi em uma célula das colunas de edição ou exclusão
             if (e.RowIndex >= 0 && (DtUsuario.Columns[e.ColumnIndex] is DataGridViewButtonColumn))
