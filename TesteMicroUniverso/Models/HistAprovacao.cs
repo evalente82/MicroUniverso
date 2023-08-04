@@ -14,5 +14,6 @@ namespace TesteMicroUniverso.Models
         public int IdUsuario{ get; set; }
         public string Operacao { get; set; }
         public int IdNota{ get; set; }
+        public DateTime DtData { get; set; }
     }
 }

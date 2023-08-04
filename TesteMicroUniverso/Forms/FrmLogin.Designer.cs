@@ -55,7 +55,7 @@
             this.BtnLogin.Location = new System.Drawing.Point(207, 80);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(75, 23);
-            this.BtnLogin.TabIndex = 1;
+            this.BtnLogin.TabIndex = 3;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
@@ -65,7 +65,7 @@
             this.TxtUsuario.Location = new System.Drawing.Point(6, 33);
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(276, 20);
-            this.TxtUsuario.TabIndex = 2;
+            this.TxtUsuario.TabIndex = 1;
             // 
             // TxtSenha
             // 
@@ -73,7 +73,7 @@
             this.TxtSenha.Name = "TxtSenha";
             this.TxtSenha.PasswordChar = '*';
             this.TxtSenha.Size = new System.Drawing.Size(159, 20);
-            this.TxtSenha.TabIndex = 3;
+            this.TxtSenha.TabIndex = 2;
             // 
             // label2
             // 
@@ -98,7 +98,7 @@
             this.BtnCadastrar.Location = new System.Drawing.Point(15, 41);
             this.BtnCadastrar.Name = "BtnCadastrar";
             this.BtnCadastrar.Size = new System.Drawing.Size(75, 23);
-            this.BtnCadastrar.TabIndex = 6;
+            this.BtnCadastrar.TabIndex = 4;
             this.BtnCadastrar.Text = "Cadastrar";
             this.BtnCadastrar.UseVisualStyleBackColor = true;
             this.BtnCadastrar.Click += new System.EventHandler(this.BtnCadastrar_Click);
@@ -126,7 +126,7 @@
             this.panel2.Size = new System.Drawing.Size(296, 119);
             this.panel2.TabIndex = 8;
             // 
-            // Login
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,7 +134,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Login";
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel1.ResumeLayout(false);

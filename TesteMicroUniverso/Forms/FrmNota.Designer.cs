@@ -30,16 +30,14 @@
         {
             this.dtNota = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.dtInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtFim = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.checkVistoAprovPapel = new System.Windows.Forms.CheckBox();
+            this.checkDentroLimiteUsu = new System.Windows.Forms.CheckBox();
+            this.checkSemVistoAprov = new System.Windows.Forms.CheckBox();
+            this.BtnVistoAprovacao = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtNota)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,116 +46,115 @@
             this.dtNota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtNota.Location = new System.Drawing.Point(12, 150);
             this.dtNota.Name = "dtNota";
-            this.dtNota.Size = new System.Drawing.Size(1011, 267);
+            this.dtNota.Size = new System.Drawing.Size(1214, 266);
             this.dtNota.TabIndex = 0;
+            this.dtNota.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtNota_CellFormatting);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(44, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Emissão";
+            this.label1.Text = "Período:";
             // 
-            // textBox1
+            // BtnBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(47, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.BtnBuscar.Location = new System.Drawing.Point(260, 110);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.BtnBuscar.TabIndex = 3;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
-            // button1
+            // dtInicio
             // 
-            this.button1.Location = new System.Drawing.Point(47, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dtInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtInicio.Location = new System.Drawing.Point(47, 35);
+            this.dtInicio.Name = "dtInicio";
+            this.dtInicio.Size = new System.Drawing.Size(97, 20);
+            this.dtInicio.TabIndex = 12;
+            this.dtInicio.Value = new System.DateTime(2023, 8, 2, 0, 0, 0, 0);
             // 
-            // textBox2
+            // dtFim
             // 
-            this.textBox2.Location = new System.Drawing.Point(176, 36);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.dtFim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFim.Location = new System.Drawing.Point(241, 35);
+            this.dtFim.Name = "dtFim";
+            this.dtFim.Size = new System.Drawing.Size(94, 20);
+            this.dtFim.TabIndex = 13;
+            this.dtFim.Value = new System.DateTime(2023, 8, 4, 0, 0, 0, 0);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(173, 19);
+            this.label2.Location = new System.Drawing.Point(238, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Valor Mercadorias";
+            this.label2.Size = new System.Drawing.Size(26, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Até:";
             // 
-            // textBox3
+            // checkVistoAprovPapel
             // 
-            this.textBox3.Location = new System.Drawing.Point(303, 36);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.checkVistoAprovPapel.AutoSize = true;
+            this.checkVistoAprovPapel.Location = new System.Drawing.Point(47, 93);
+            this.checkVistoAprovPapel.Name = "checkVistoAprovPapel";
+            this.checkVistoAprovPapel.Size = new System.Drawing.Size(160, 17);
+            this.checkVistoAprovPapel.TabIndex = 15;
+            this.checkVistoAprovPapel.Text = "Visto / Aprovação por Papel";
+            this.checkVistoAprovPapel.UseVisualStyleBackColor = true;
+            this.checkVistoAprovPapel.CheckedChanged += new System.EventHandler(this.checkVistoAprovPapel_CheckedChanged);
             // 
-            // label3
+            // checkDentroLimiteUsu
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(300, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Desconto";
+            this.checkDentroLimiteUsu.AutoSize = true;
+            this.checkDentroLimiteUsu.Location = new System.Drawing.Point(47, 70);
+            this.checkDentroLimiteUsu.Name = "checkDentroLimiteUsu";
+            this.checkDentroLimiteUsu.Size = new System.Drawing.Size(144, 17);
+            this.checkDentroLimiteUsu.TabIndex = 16;
+            this.checkDentroLimiteUsu.Text = "Dentro do limite permitido";
+            this.checkDentroLimiteUsu.UseVisualStyleBackColor = true;
+            this.checkDentroLimiteUsu.CheckedChanged += new System.EventHandler(this.checkDentroLimiteUsu_CheckedChanged);
             // 
-            // textBox4
+            // checkSemVistoAprov
             // 
-            this.textBox4.Location = new System.Drawing.Point(429, 36);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 9;
+            this.checkSemVistoAprov.AutoSize = true;
+            this.checkSemVistoAprov.Location = new System.Drawing.Point(47, 116);
+            this.checkSemVistoAprov.Name = "checkSemVistoAprov";
+            this.checkSemVistoAprov.Size = new System.Drawing.Size(136, 17);
+            this.checkSemVistoAprov.TabIndex = 17;
+            this.checkSemVistoAprov.Text = "Sem Visto / Aprovação";
+            this.checkSemVistoAprov.UseVisualStyleBackColor = true;
+            this.checkSemVistoAprov.CheckedChanged += new System.EventHandler(this.checkSemVistoAprov_CheckedChanged);
             // 
-            // label4
+            // BtnVistoAprovacao
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(426, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Frete";
+            this.BtnVistoAprovacao.Location = new System.Drawing.Point(17, 431);
+            this.BtnVistoAprovacao.Name = "BtnVistoAprovacao";
+            this.BtnVistoAprovacao.Size = new System.Drawing.Size(127, 52);
+            this.BtnVistoAprovacao.TabIndex = 18;
+            this.BtnVistoAprovacao.Text = "Visto / Aprovação";
+            this.BtnVistoAprovacao.UseVisualStyleBackColor = true;
+            this.BtnVistoAprovacao.Click += new System.EventHandler(this.BtnVistoAprovacao_Click);
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(553, 36);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(550, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Total";
-            // 
-            // Nota
+            // FrmNota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 455);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(1238, 544);
+            this.Controls.Add(this.BtnVistoAprovacao);
+            this.Controls.Add(this.checkSemVistoAprov);
+            this.Controls.Add(this.checkDentroLimiteUsu);
+            this.Controls.Add(this.checkVistoAprovPapel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dtFim);
+            this.Controls.Add(this.dtInicio);
+            this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtNota);
-            this.Name = "Nota";
+            this.Name = "FrmNota";
             this.Text = "Nota";
             this.Load += new System.EventHandler(this.Nota_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtNota)).EndInit();
@@ -170,15 +167,13 @@
 
         private System.Windows.Forms.DataGridView dtNota;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.DateTimePicker dtInicio;
+        private System.Windows.Forms.DateTimePicker dtFim;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox checkVistoAprovPapel;
+        private System.Windows.Forms.CheckBox checkDentroLimiteUsu;
+        private System.Windows.Forms.CheckBox checkSemVistoAprov;
+        private System.Windows.Forms.Button BtnVistoAprovacao;
     }
 }

@@ -17,7 +17,7 @@ namespace TesteMicroUniverso.Models
         public decimal? Frete { get; set; }
         public decimal? Total { get; set; }
         public bool? Status { get; set; }
-        public int? Visto { get; set; }
-        public int? Aprovacao { get; set; }
+        public int Visto { get; set; }
+        public int Aprovacao { get; set; }
     }
 }
