@@ -11,9 +11,13 @@ namespace TesteMicroUniverso.Models
     {
         [Key]
         public int IdHistAprovacao { get; set; }
-        public int IdUsuario{ get; set; }
+        public int IdUsuario { get; set; }
         public string Operacao { get; set; }
-        public int IdNota{ get; set; }
+        public int IdNota { get; set; }
         public DateTime DtData { get; set; }
+
+        // Propriedades de navegação para as entidades relacionadas
+        public virtual Usuario Usuario { get; set; }
+        public virtual Nota Nota { get; set; }
     }
 }

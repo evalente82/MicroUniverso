@@ -19,5 +19,7 @@ namespace TesteMicroUniverso.Models
         public bool? Status { get; set; }
         public int Visto { get; set; }
         public int Aprovacao { get; set; }
+
+        public virtual ICollection<HistAprovacao> HistoricoAprovacoes { get; set; }
     }
 }

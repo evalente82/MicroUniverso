@@ -16,5 +16,7 @@ namespace TesteMicroUniverso.Models
         public string Papel { get; set; }
         public decimal ValorMinAprovacao { get; set; }
         public decimal ValorMaxAprovacao { get; set; }
+
+        public virtual ICollection<HistAprovacao> HistoricoAprovacoes { get; set; }
     }
 }
